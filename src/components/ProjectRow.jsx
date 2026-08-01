@@ -82,7 +82,7 @@ const ProjectRow = ({ project }) => {
                 <span>↗</span> GitHub Repo
               </a>
             )}
-            {project.liveUrl && (
+            {/* {project.liveUrl && (
               <a
                 href={project.liveUrl}
                 target="_blank"
@@ -91,7 +91,7 @@ const ProjectRow = ({ project }) => {
               >
                 <span>↗</span> Live Demo
               </a>
-            )}
+            )} */}
           </div>
         </div>
       </div>

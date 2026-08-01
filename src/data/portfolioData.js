@@ -67,23 +67,23 @@ export const PROJECTS = [
   {
     id: "f3",
     perm: "-rwxr-xr-x",
-    filename: "auth-notes",
+    filename: "subscription-tracker-api",
     ext: ".md",
-    title: "Auth-Based Notes Application",
-    description: "Full-stack productivity application with hardened authentication pipelines and user-isolated document storage.",
-    problem: "Many lightweight web apps expose user data through insecure session handling, broken access control, or plaintext storage.",
+    title: "Subscription Tracker API",
+    description: "Subscription management REST API built with Node.js, Express, and MongoDB.",
+    problem: "Managing active recurring subscriptions manually is prone to calculation errors, and unsecured API endpoints often expose user data without validation.",
     features: [
-      "Strict user-scoped document isolation ensuring zero data bleed across accounts under any API request payload.",
-      "Instantaneous CRUD operations with client-side optimistic UI updates and server validation.",
-      "Secure authentication lifecycle including bcrypt password hashing and token validation."
+      "Built a RESTful backend structuring 18 endpoints across 3 resource routers with a layered controller-middleware architecture.",
+      "Implemented stateless JWT authentication with bcrypt password hashing, httpOnly cookies, and custom authorization middleware to secure protected routes.",
+      "Automated subscription lifecycle logic via Mongoose pre-save hooks, computing renewal dates across 4 billing frequencies."
     ],
     technical: [
-      "Architected Express.js middleware pipelines verifying JWT Bearer tokens and checking resource ownership on every route.",
-      "Structured MongoDB document schemas with compound indexing for low-latency querying by user ID and timestamp."
+      "Enforced Zod schema validation on all data-mutating routes and built centralized error-handling middleware normalizing 5+ error types.",
+      "Optimized data querying to support paginated, filterable, and sortable (5 fields) results."
     ],
-    stack: ["React", "Node.js", "Express.js", "MongoDB", "JWT"],
-    githubUrl: "https://github.com/harishhbaskar",
-    liveUrl: "https://github.com/harishhbaskar"
+    stack: ["Node.js", "Express", "MongoDB", "JWT", "Zod", "Mongoose"],
+    githubUrl: "https://github.com/harishhbaskar/subscription-tracker-api",
+    liveUrl: ""
   }
 ];
 
