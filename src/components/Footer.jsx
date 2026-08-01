@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer>Thanks for reading , please hire :)</footer>
+    <footer>Thanks for reading , hire me please:)</footer>
   );
 };
 
